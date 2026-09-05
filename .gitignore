@@ -2,3 +2,4 @@
 preview-server.mjs
 .DS_Store
 Thumbs.db
+.netlify/
