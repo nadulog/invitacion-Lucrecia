@@ -1,4 +1,4 @@
-const eventDate = new Date('2026-11-14T20:30:00-03:00');
+const eventDate = new Date('2026-11-14T21:00:00-03:00');
 const welcome=document.querySelector('#welcome');
 const backgroundMusic=document.querySelector('#background-music');
 const audioControl=document.querySelector('.audio-control');
