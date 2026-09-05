@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3f0">
+  <meta name="description" content="Invitación a los XV de Lucrecia — 14 de noviembre de 2026.">
+  <meta property="og:title" content="Mis XV — Lucrecia">
+  <meta property="og:description" content="Te espero el sábado 14 de noviembre de 2026 a las 20:30 hs.">
+  <meta property="og:image" content="assets/portada-lucrecia.png">
+  <title>Mis XV — Lucrecia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="welcome" id="welcome" role="dialog" aria-label="Elegí cómo entrar a la invitación">
+    <img src="assets/entrada-lucrecia.png" alt="Mis XV Lucrecia. Elegí cómo querés entrar">
+    <button class="welcome-choice welcome-music" type="button" aria-label="Entrar con música"></button>
+    <button class="welcome-choice welcome-silent" type="button" aria-label="Entrar sin música"></button>
+  </div>
+  <main>
+    <section class="panel image-panel hero" aria-label="Portada de los XV de Lucrecia">
+      <img src="assets/portada-lucrecia.png" alt="Mis XV Lucrecia, 14 de noviembre de 2026">
+      <span class="scroll-cue" aria-hidden="true">⌄</span>
+    </section>
+
+    <section class="panel countdown" aria-labelledby="countdown-title">
+      <img src="assets/cuenta-regresiva.png" alt="" aria-hidden="true">
+      <div class="countdown-content">
+        <p id="countdown-title">FALTA MUY POCO</p>
+        <div class="timer" aria-live="polite">
+          <div><strong id="days">00</strong><span>DÍAS</span></div>
+          <div><strong id="hours">00</strong><span>HORAS</span></div>
+          <div><strong id="minutes">00</strong><span>MINUTOS</span></div>
+          <div><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+        </div>
+        <p>PARA VIVIR UNA NOCHE INOLVIDABLE</p>
+      </div>
+    </section>
+
+    <section class="panel date-reveal" aria-label="Fecha y hora">
+      <img class="date-result" src="assets/fecha-revelada.png" alt="Sábado 14 de noviembre, 20:30 horas">
+      <img id="scratch-source" src="assets/cuenta-regresiva.png" alt="" hidden>
+      <canvas class="date-cover" aria-label="Pasá el dedo sobre toda la pantalla para descubrir la fecha"></canvas>
+      <div class="scratch-sparkles" aria-hidden="true"></div>
+      <div class="scratch-instruction" aria-hidden="true">
+        <div class="instruction-copy">
+          <span>AGENDÁ ESTA FECHA</span>
+          <strong>PASÁ EL DEDO</strong>
+          <small>DESLIZÁ POR TODA LA PANTALLA<br>PARA DESCUBRIRLA</small>
+          <i>✦</i>
+        </div>
+      </div>
+      <a class="hotspot calendar-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+de+Lucrecia&dates=20261114T233000Z/20261115T063000Z&details=Mis+XV+de+Lucrecia&location=Sal%C3%B3n+Country+Chacras+del+Valle+Nuevo" target="_blank" rel="noopener" aria-label="Agregar al calendario"></a>
+    </section>
+
+    <section class="panel image-panel action-panel" aria-label="Cómo llegar">
+      <img src="assets/como-llegar.png" alt="Cómo llegar al Salón Country Chacras del Valle Nuevo">
+      <button class="hotspot location-open" type="button" aria-label="Ver ubicación"></button>
+    </section>
+
+    <section class="panel image-panel dress-panel" aria-label="Dress code">
+      <img src="assets/dress-code.png" alt="Dress code elegante. Se reservan los colores blanco y plateado">
+      <div class="dress-note"><span>COLORES RESERVADOS</span><strong>BLANCO Y PLATEADO</strong></div>
+    </section>
+
+    <section class="panel image-panel action-panel music-panel" aria-label="Elegir una canción">
+      <img src="assets/musica.png" alt="Música. Elegí una canción para mis XV">
+      <div class="headphones-beat" aria-hidden="true"></div>
+      <div class="satin-reflection" aria-hidden="true"></div>
+      <a class="hotspot music-link" href="https://open.spotify.com/playlist/2S0Hc8hHnRIwg5ZQJlDL6E?si=n8O3HCKHReyVUpYfUZ7IZw&amp;utm_source=whatsapp&amp;pi=6e7Oz1-pQEiiJ&amp;pt=fdf9cc7ba08352aa1f867aff4d1700bf" target="_blank" rel="noopener" aria-label="Agregar una canción a la playlist de los XV de Lucrecia"></a>
+    </section>
+
+    <section class="panel image-panel action-panel" aria-label="Regalos">
+      <img src="assets/regalos.png" alt="Tu presencia es mi mejor regalo. Si querés hacerme un presente, podés ver los datos">
+      <button class="hotspot gift-open" type="button" aria-label="Ver datos para regalos"></button>
+    </section>
+
+    <section class="panel image-panel action-panel" aria-label="Confirmación de asistencia">
+      <img src="assets/confirmacion.png" alt="Quiero compartir esta noche con vos. ¿Venís?">
+      <a class="hotspot rsvp-link" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-lucrecia" target="_blank" rel="noopener" aria-label="Confirmar asistencia a los XV de Lucrecia"></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con amor <span aria-label="corazón">♡</span> por <strong>bloomdate</strong></p>
+    <nav aria-label="Contacto de Bloomdate">
+      <a href="https://wa.me/541140436324" target="_blank" rel="noopener" aria-label="WhatsApp de Bloomdate"><img src="assets/icon-whatsapp.svg" alt=""></a>
+      <a href="https://instagram.com/bloomdate.invitaciones" target="_blank" rel="noopener" aria-label="Instagram de Bloomdate"><img src="assets/icon-instagram.svg" alt=""></a>
+      <a href="https://bloomdate-site.netlify.app/" target="_blank" rel="noopener" aria-label="Web de Bloomdate"><img src="assets/icon-web.svg" alt=""></a>
+    </nav>
+  </footer>
+
+  <audio id="background-music" preload="auto" loop>
+    <source src="assets/memories.mp3" type="audio/mpeg">
+  </audio>
+  <button class="audio-control" type="button" aria-label="Reproducir música" aria-pressed="false" hidden>
+    <svg class="audio-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z"/></svg>
+    <svg class="audio-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+  </button>
+
+  <dialog id="location-modal" class="modal">
+    <div class="modal-card image-modal">
+      <img src="assets/modal-ubicacion.png" alt="Cómo llegar al Salón Country Chacras del Valle Nuevo">
+      <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+      <a class="modal-map-link" href="https://maps.app.goo.gl/9cH84wXcmKY4kzJs6?g_st=aw" target="_blank" rel="noopener" aria-label="Abrir ubicación en Google Maps"></a>
+    </div>
+  </dialog>
+
+  <dialog id="gift-modal" class="modal">
+    <div class="modal-card image-modal">
+      <img src="assets/modal-regalos.png" alt="Datos para regalos: Garriga Lucrecia, alias garrigal.bna, Banco de la Nación Argentina">
+      <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+      <button class="copy-alias" type="button" data-alias="garrigal.bna" aria-label="Copiar alias garrigal.bna"></button>
+      <span class="copy-toast" role="status">Alias copiado</span>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
